@@ -9,14 +9,12 @@ function f() {
   // console.log(this.x);
   // console.log(global.x);
   // console.log(window.x);
-  console.log(globalThis.x); // 전역에 접근할때 이것만!
+  // console.log(globalThis.x); // 전역에 접근할때 이것만!
 
-//   for(var i=0; i<10; i++){
-  for(let i=0; i<10; i++){
-      
-    }
-    console.log(i);
-    
+  //   for(var i=0; i<10; i++){
+  for (var i = 0; i < 10; i++) {
+  }
+  console.log(i);
 }
 
 f();
