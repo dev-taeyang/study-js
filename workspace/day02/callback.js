@@ -39,3 +39,7 @@ function calc(price, amount) {
   result = price * amount;
   return result;
 }
+
+function stringify() {
+  
+}
