@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+body {
+    font-family: 'NanumGomSinCe';
+    font-weight: bold;
+}
+
+input {
+    font-family: 'NanumGomSinCe';
+    font-weight: bold;
+}
+
+fieldset {
+    text-align: center;
+    margin: 0 auto;
+    width: 40%;
+    border: none;
+    border-top: 5px dashed purple;
+}
+legend {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.top {
+    width: 100%;
+    margin-bottom: 90px;
+    margin-top: 30px;
+}
+
+#result {
+    border: none;
+    text-align: center;
+}
+
+#input {
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+#inputButton {
+    width: 40%;
+    background-color: purple;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 2px;
+    cursor: pointer;
+}
