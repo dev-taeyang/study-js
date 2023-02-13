@@ -6,7 +6,7 @@ globalThis.temp;
 
 function confirm() {
     const input = document.querySelector('input').value;
-    const trs = document.querySelectorAll('tbody tr');
+    const tr = document.querySelectorAll('tbody tr');
     let check = false;
 
     if (globalThis.temp) {
@@ -31,3 +31,5 @@ function confirm() {
         alert('다시 시도해주세요.');
     }
 }
+
+

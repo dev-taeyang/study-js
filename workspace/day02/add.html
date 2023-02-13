@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="javascript" href="function.js" />
-  </head>
-  <body>
-    <h3>숫자 더하는 함수 사용</h3>
-  </body>
-  <script src="add.js"></script>
-  <script>
-    let num = prompt('숫자를 입력해주세요', 'ex) 135');
-    // let numbers = new Array();
-    // let results = new Array();
-    function slice(arr) {
-      numbers = arr.split('');
-      numbers.map((v) => parseInt(v)).forEach((v) => results.push(v));
-    }
-    slice(num);
-    console.log(results);
-    document.write(`<h3>${add(results)}</h3>`);
-  </script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="javascript" href="function.js" />
+    </head>
+    <body>
+        <h3>숫자 더하는 함수 사용</h3>
+    </body>
+    <script src="add.js"></script>
+    <script>
+        let num = prompt('숫자를 입력해주세요', 'ex) 135');
+
+        // let numbers = new Array();
+        // let results = new Array();
+        function slice(arr) {
+            let result = new Array();
+            numbers = arr.split('');
+            numbers.map((v) => parseInt(v)).forEach((v) => results.push(v));
+        }
+    </script>
 </html>

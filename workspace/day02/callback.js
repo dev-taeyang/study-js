@@ -24,22 +24,19 @@ function add(number1, number2, callback) {
 // 3. A함수는 B함수를 callback함수로 전달받는다.
 
 info('오태양', 100, 5, function (result) {
-  return console.log(result);
+    return console.log(result);
 });
 
 function info(name, price, amount, callback) {
-  var info;
-  if (callback) {
-    return callback(name + `, 전체 금액:` + calc(price, amount));
-  }
-  return info;
+    var info;
+    if (callback) {
+        return callback(name + `, 전체 금액:` + calc(price, amount));
+    }
+    return info;
 }
 function calc(price, amount) {
-  let result;
-  result = price * amount;
-  return result;
+    let result;
+    result = price * amount;
+    return result;
 }
 
-function stringify() {
-  
-}

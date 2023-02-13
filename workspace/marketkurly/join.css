@@ -1,0 +1,1451 @@
+@font-face {
+    font-family: 'Noto Sans-L';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('https://res.kurly.com/fonts/NotoSansKR-Light.woff2') format('woff2'),
+        url('https://res.kurly.com/fonts/NotoSansKR-Light.woff') format('woff'),
+        url('https://res.kurly.com/fonts/NotoSansKR-Light.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans-R';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://res.kurly.com/fonts/NotoSansKR-Regular.woff2') format('woff2'),
+        url('https://res.kurly.com/fonts/NotoSansKR-Regular.woff') format('woff'),
+        url('https://res.kurly.com/fonts/NotoSansKR-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans-M';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('https://res.kurly.com/fonts/NotoSansKR-Medium.woff2') format('woff2'),
+        url('https://res.kurly.com/fonts/NotoSansKR-Medium.woff') format('woff'),
+        url('https://res.kurly.com/fonts/NotoSansKR-Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Noto Sans-B';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('https://res.kurly.com/fonts/NotoSansKR-Bold.woff2') format('woff2'),
+        url('https://res.kurly.com/fonts/NotoSansKR-Bold.woff') format('woff'),
+        url('https://res.kurly.com/fonts/NotoSansKR-Bold.otf') format('truetype');
+}
+*,
+:after,
+:before,
+legend,
+td,
+th {
+    padding: 0;
+}
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    line-height: 1.15;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Noto Sans', 'malgun gothic', AppleGothic, dotum, sans-serif;
+}
+:root {
+    --swiper-theme-color: #007aff;
+}
+body {
+    margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #fff;
+    -webkit-tap-highlight-color: transparent;
+}
+body,
+button,
+input,
+select,
+textarea {
+    font-size: 14px;
+    color: #333;
+}
+div {
+    display: block;
+}
+label {
+    cursor: default;
+}
+input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: buttonface;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.joinContainer {
+    min-width: 1050px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    background-color: rgb(255, 255, 255);
+}
+.joinMassage {
+    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -1px;
+    color: rgb(51, 51, 51);
+    font-family: 'Noto Sans-M';
+}
+.joinInputContainer {
+    width: 640px;
+    margin: 0px auto;
+}
+.joinEssential {
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(51, 51, 51);
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    line-height: 17px;
+    text-align: right;
+}
+.joinEssentialSpan {
+    color: rgb(238, 106, 123);
+}
+.joinInput {
+    padding: 0px;
+}
+.joinInputId {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputIdDiv {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputIdLabel {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputIdSpan {
+    color: rgb(238, 106, 123);
+}
+.joinInputIdBar {
+    flex: 1 1 0%;
+}
+.joinInputIdBarDiv1 {
+    padding-bottom: 0px;
+}
+.joinInputIdBarDiv2 {
+    position: relative;
+    height: 48px;
+}
+#memberId {
+    width: 100%;
+    height: 46px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+}
+.idInput {
+    width: 100%;
+    height: 46px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+}
+.joinInputIdButton {
+    width: 120px;
+    margin-left: 8px;
+}
+.joinInputIdButton1 {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 52px;
+    border-radius: 3px;
+    color: rgb(95, 0, 128);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(95, 0, 128);
+}
+.joinInputIdButton > button {
+    height: 44px;
+    border-radius: 3px;
+}
+.joinInputIdButtonSpan {
+    display: inline-block;
+    font-family: 'Noto Sans-M';
+}
+.joinInputIdButton > button > span {
+    font-weight: 500;
+    font-size: 14px;
+}
+.joinInputPassword {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputPasswordName {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputPasswordNameLabel {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputPasswordNameSpan {
+    color: rgb(238, 106, 123);
+}
+.joinInputPasswordContent {
+    flex: 1 1 0%;
+}
+.joinInputPasswordContentDiv {
+    padding-bottom: 0px;
+}
+.joinInputPasswordContentDiv2 {
+    position: relative;
+    height: 48px;
+}
+.joinInputPasswordContentInput {
+    width: 100%;
+    height: 46px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+}
+/* input[type='password' i] {
+  -webkit-text-security: disc !important;
+  padding: 1px 2px;
+} */
+.joinInputPasswordContentDiv3 {
+    width: 120px;
+    margin-left: 8px;
+}
+.joinInputPasswordCheck {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputPasswordCheckDiv1 {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputPasswordCheckLabel {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputPasswordCheckSpan {
+    color: rgb(238, 106, 123);
+}
+.joinInputPasswordCheckContent {
+    flex: 1 1 0%;
+}
+.joinInputPasswordCheckContentDiv1 {
+    padding-bottom: 0px;
+}
+.joinInputPasswordCheckContentDiv2 {
+    position: relative;
+    height: 48px;
+}
+.joinInputPasswordCheckContentInput {
+    width: 100%;
+    height: 46px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+}
+.joinInputPasswordCheckContentDiv3 {
+    width: 120px;
+    margin-left: 8px;
+}
+.joinInputName {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputNameName {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputNameNameLabel {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputNameNameSpan {
+    color: rgb(238, 106, 123);
+}
+.joinInputNameContent {
+    flex: 1 1 0%;
+}
+.joinInputNameContentDiv1 {
+    padding-bottom: 0px;
+}
+.joinInputNameContentDiv2 {
+    position: relative;
+    height: 48px;
+}
+.joinInputNameContentInput {
+    width: 100%;
+    height: 46px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+}
+.joinInputNameDiv3 {
+    width: 120px;
+    margin-left: 8px;
+}
+.joinInputEmail {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputEmailName {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputEmailLabel {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputEmailNameSpan {
+    color: rgb(238, 106, 123);
+}
+.joinInputEmailContent {
+    flex: 1 1 0%;
+}
+.joinInputEmailContentDiv1 {
+    padding-bottom: 0px;
+}
+.joinInputEmailContentDiv2 {
+    position: relative;
+    height: 48px;
+}
+.joinInputEmailContentInput {
+    width: 100%;
+    height: 46px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+}
+.joinInputEmailContentDiv3 {
+    width: 120px;
+    margin-left: 8px;
+}
+.joinInputEmailContentDiv3Button {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 52px;
+    border-radius: 3px;
+    color: rgb(95, 0, 128);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(95, 0, 128);
+}
+.joinInputEmailContentDiv3 > button {
+    height: 44px;
+    border-radius: 3px;
+}
+.joinInputEmailContentDiv3Span {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputPhone {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputPhoneName {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputPhoneNameLabel {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputPhoneNameSpan {
+    color: rgb(238, 106, 123);
+}
+.joinInputPhoneContent {
+    flex: 1 1 0%;
+}
+.joinInputPhoneContentDiv1 {
+    padding-bottom: 0px;
+}
+.joinInputPhoneContentDiv2 {
+    position: relative;
+    height: 48px;
+}
+.joinInputPhoneContentDiv2Input {
+    width: 100%;
+    height: 46px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+}
+.joinInputPhoneContentDiv3 {
+    width: 120px;
+    margin-left: 8px;
+}
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+.joinInputPhoneContentDiv3Button {
+    border-color: rgb(221, 221, 221);
+    color: rgb(221, 221, 221);
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 52px;
+    border-radius: 3px;
+    color: rgb(95, 0, 128);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(95, 0, 128);
+}
+.joinInputPhoneContentDiv3Button:disabled {
+    border-color: rgb(221, 221, 221);
+    color: rgb(221, 221, 221);
+}
+.joinInputPhoneContentDiv3 > button {
+    height: 44px;
+    border-radius: 3px;
+}
+.joinInputPhoneContentDiv3Span {
+    font-weight: 500;
+    font-size: 14px;
+}
+.joinInputAddress {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputAddressName {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputAddressNameLabel {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputAddressNameSpan {
+    color: rgb(238, 106, 123);
+}
+.joinInputAddressContent {
+    flex: 1 1 0%;
+}
+.joinInputAddressContentButton {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 44px;
+    border-radius: 4px;
+    color: rgb(95, 0, 128);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(95, 0, 128);
+}
+.joinInputAddressContentSpan1 {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Noto Sans-M';
+}
+.joinInputAddressContentSpanImg {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+.joinInputAddressContentSpan2 {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(102, 102, 102);
+}
+.joinInputAddressContentDiv {
+    width: 120px;
+    margin-left: 8px;
+}
+.joinInputGender {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputGenderName {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputGenderNameLabel {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputGenderContent {
+    flex: 1 1 0%;
+}
+.joinInputGenderContentDiv1 {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.joinInputGenderContentDiv1Label1 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 0px 9px;
+}
+.joinInputGenderContentDiv1Input {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0px, 0px, 0px, 0px);
+}
+input[type='checkbox'],
+input[type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.joinInputGenderContentDiv1Span1 {
+    min-width: 24px;
+    min-height: 24px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 14px;
+}
+.joinInputGenderContentDiv1SpanDiv {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: white;
+}
+.joinInputGenderContentDiv1Span2 {
+    position: relative;
+    font-size: 14px;
+    margin-left: 12px;
+}
+.joinInputGenderContentDiv1Label2 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 0px 9px;
+}
+.joinInputGenderContentDiv1Label2Input {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0px, 0px, 0px, 0px);
+}
+.joinInputGenderContentDiv1Label2Span1 {
+    min-width: 24px;
+    min-height: 24px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 14px;
+    cursor: pointer;
+}
+.joinInputGenderContentDiv1Label2Div {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: white;
+}
+.joinInputGenderContentDiv1Label2Span2 {
+    position: relative;
+    margin-left: 12px;
+    font-size: 14px;
+}
+.joinInputGenderContentDiv1Label3 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 0px 9px;
+}
+.joinInputGenderContentDiv1Label3Input {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0px, 0px, 0px, 0px);
+}
+.joinInputGenderContentDiv1Label3Span1 {
+    min-width: 24px;
+    min-height: 24px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgb(95, 0, 128);
+    font-size: 14px;
+    cursor: pointer;
+}
+.joinInputGenderContentDiv1Label3InputDiv {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: white;
+}
+.joinInputGenderContentDiv1Label3Span2 {
+    position: relative;
+    margin-left: 12px;
+    font-size: 14px;
+}
+.joinInputGenderDiv {
+    width: 120px;
+    margin-left: 8px;
+}
+.joinInputBirth {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputBirthName {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputBirthNameLabel {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputBirthContent {
+    flex: 1 1 0%;
+}
+.joinInputBirthContentDiv1 {
+    height: 44px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    padding: 0px 15px;
+}
+.joinInputBirthContentDiv2 {
+    padding-bottom: 0px;
+}
+.joinInputBirthContentDiv2Div {
+    position: relative;
+    height: 40px;
+}
+.joinInputBirthContentDiv2Input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    line-height: 38px;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+}
+.joinInputBirthContentDiv2Span {
+    height: 100%;
+}
+.joinInputBirthContentDiv2Span::after {
+    content: '/';
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    text-align: center;
+    line-height: 40px;
+}
+.joinInputBirthContentDiv2Div2 {
+    padding-bottom: 0px;
+}
+.joinInputBirthContentDiv2Div2Div {
+    position: relative;
+    height: 40px;
+}
+.joinInputBirthContentDiv2Div2Input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    line-height: 38px;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+}
+.joinInputBirthContentDiv2Span2 {
+    height: 100%;
+}
+.joinInputBirthContentDiv2Span2::after {
+    content: '/';
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    text-align: center;
+    line-height: 40px;
+}
+.joinInputBirthContentDiv2Div3 {
+    padding-bottom: 0px;
+}
+.joinInputBirthContentDiv2Div3Div {
+    position: relative;
+    height: 40px;
+}
+.joinInputBirthContentDiv2Div3Input {
+    width: 100%;
+    height: 40px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    line-height: 38px;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+}
+.joinInputBirthDiv3 {
+    width: 120px;
+    margin-left: 8px;
+}
+.joinInputPlus {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 20px;
+}
+.joinInputPlusDiv1 {
+    width: 139px;
+    padding-top: 12px;
+}
+.joinInputPlusDiv1Label {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.joinInputPlusDiv2 {
+    flex: 1 1 0%;
+}
+.joinInputPlusDiv2Div1 {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.joinInputPlusDiv2Div1Label1 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 0px 9px;
+}
+.joinInputPlusDiv2Div1Input {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0px, 0px, 0px, 0px);
+}
+.joinInputPlusDiv2Div1Span1 {
+    min-width: 24px;
+    min-height: 24px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+    font-size: 14px;
+}
+.joinInputPlusDiv2Div1Span1Div {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.joinInputPlusDiv2Div1Span2 {
+    position: relative;
+    font-size: 14px;
+    margin-left: 12px;
+}
+.joinInputPlusDiv2Div1Label2 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 12px 0px 9px;
+}
+.joinInputPlusDiv2Div1Label2Input {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0px, 0px, 0px, 0px);
+}
+.joinInputPlusDiv2Div1Label2Span {
+    min-width: 24px;
+    min-height: 24px;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid rgb(221, 221, 221);
+}
+.joinInputPlusDiv2Div1Label2Div1 {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+.joinInputPlusDiv2Div1Label2Div1Span {
+    position: relative;
+    font-size: 14px;
+    margin-left: 12px;
+}
+.joinInputPlusDiv3 {
+    width: 120px;
+    margin-left: 8px;
+}
+.line {
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(51, 51, 51);
+}
+.areYouSure {
+    padding: 0px;
+}
+.areYouSureContainer {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px 0px 10px 20px;
+}
+.areYouSureDiv1 {
+    width: 139px;
+    padding-top: 12px;
+}
+.areYouSureDiv1Label {
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    line-height: 20px;
+    font-family: 'Noto Sans-M';
+}
+.areYouSureDiv1LabelSpan {
+    color: rgb(238, 106, 123);
+}
+.areYouSureDiv2 {
+    flex: 1 1 0%;
+}
+.areYouSureDiv2Div1 {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 12px;
+    display: flex;
+    padding: 8px 0px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    margin-top: 4px;
+}
+.areYouSureDiv2Div1Lavel1 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: top;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    padding: 0px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.areYouSureDiv2Div1Input {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+}
+input[type='checkbox'],
+input[type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.areYouSureDiv2Div1Img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.areYouSureDiv2Div1P {
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 4px;
+    padding-left: 36px;
+}
+.areYouSureDiv2Div1Span {
+    font-family: 'Noto Sans-M';
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.areYouSureDiv3 {
+    display: flex;
+    padding: 8px 0px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.areYouSureDiv3Div1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.areYouSureDiv3Div1Label {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: top;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    padding: 0px;
+    font-size: 14px;
+}
+.areYouSureDiv3Div1Input {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+}
+.areYouSureDiv3Div1Img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.areYouSureDiv3Div1Span2 {
+    padding-left: 5px;
+    color: rgb(153, 153, 153);
+}
+.areYouSureDiv3Div1A {
+    padding-right: 22px;
+    color: rgb(95, 0, 128);
+    letter-spacing: 0px;
+    background-color: transparent;
+    text-decoration: none;
+}
+.areYouSureDiv3Div1A::after {
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 6px;
+    height: 9px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjExIiB2aWV3Qm94PSIwIDAgNiAxMSI+CiAgICA8cGF0aCBmaWxsPSIjNUYwMDgwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xIDExTDYgNS41IDEgMCAwIDEuMSA0IDUuNSAwIDkuOXoiLz4KPC9zdmc+Cg==)
+        50% 50% / 6px 9px no-repeat;
+}
+.areYouSureDiv4 {
+    display: flex;
+    padding: 8px 0px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.areYouSureDiv4Div1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.areYouSureDiv4Div1Label {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: top;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    padding: 0px;
+    font-size: 14px;
+}
+.areYouSureDiv4Div1Input {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+}
+.areYouSureDiv4Div1Img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+canvas,
+img,
+video {
+    max-width: 100%;
+}
+img,
+legend {
+    border: 0;
+    vertical-align: top;
+}
+.areYouSureDiv4Div1Span1 {
+}
+.areYouSureDiv4Div1Span2 {
+    padding-left: 5px;
+    color: rgb(153, 153, 153);
+}
+.areYouSureDiv4Div1A2 {
+    padding-right: 22px;
+    color: rgb(95, 0, 128);
+    letter-spacing: 0px;
+}
+.areYouSureDiv4Div1A2::after {
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 6px;
+    height: 9px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjExIiB2aWV3Qm94PSIwIDAgNiAxMSI+CiAgICA8cGF0aCBmaWxsPSIjNUYwMDgwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xIDExTDYgNS41IDEgMCAwIDEuMSA0IDUuNSAwIDkuOXoiLz4KPC9zdmc+Cg==)
+        50% 50% / 6px 9px no-repeat;
+}
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+.areYouSureDiv5 {
+    display: flex;
+    padding: 8px 0px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.areYouSureDiv5Div1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.areYouSureDiv5Div1Lable1 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: top;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    padding: 0px;
+    font-size: 14px;
+}
+.areYouSureDiv5Div1Lable1Input1 {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+}
+.areYouSureDiv5Div1Lable1Img1 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.areYouSureDiv5Div1Lable1Span2 {
+    padding-left: 5px;
+    color: rgb(153, 153, 153);
+}
+.areYouSureDiv5Div1Lable1A1 {
+    padding-right: 22px;
+    color: rgb(95, 0, 128);
+    letter-spacing: 0px;
+}
+.areYouSureDiv5Div1Lable1A1::after {
+    content: '';
+    display: inline-block;
+    margin-left: 4px;
+    width: 6px;
+    height: 9px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjExIiB2aWV3Qm94PSIwIDAgNiAxMSI+CiAgICA8cGF0aCBmaWxsPSIjNUYwMDgwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xIDExTDYgNS41IDEgMCAwIDEuMSA0IDUuNSAwIDkuOXoiLz4KPC9zdmc+Cg==)
+        50% 50% / 6px 9px no-repeat;
+}
+.areyousurediv5div1lableA1::after {
+    content: '/';
+    display: inline-block;
+    margin-left: 4px;
+    width: 6px;
+    height: 9px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2IiBoZWlnaHQ9IjExIiB2aWV3Qm94PSIwIDAgNiAxMSI+CiAgICA8cGF0aCBmaWxsPSIjNUYwMDgwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xIDExTDYgNS41IDEgMCAwIDEuMSA0IDUuNSAwIDkuOXoiLz4KPC9zdmc+Cg==)
+        50% 50% / 6px 9px no-repeat;
+}
+.deliveryContainer {
+    display: flex;
+    padding: 8px 0px;
+    flex-direction: column;
+}
+.deliveryContainerDiv1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.deliveryContainerDiv1Lable1 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: top;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    padding: 0px;
+    font-size: 14px;
+}
+.deliveryContainerDiv1Lable1Input {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+}
+.deliveryContainerDiv1Lable1Img1 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.deliveryContainerDiv1Lable1Span1 {
+}
+.deliveryContainerDiv1Span1 {
+    padding-left: 5px;
+    color: rgb(153, 153, 153);
+}
+.deliveryContainerDiv2 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 24px;
+}
+.deliveryContainerDiv2Label1 {
+    padding: 14px 80px 9px 0px;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: top;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+}
+.deliveryContainerDiv2Label1Input1 {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+}
+.deliveryContainerDiv2Label1Img1 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.deliveryContainerDiv2Label1Span1 {
+}
+.deliveryContainerDiv2Label2 {
+    padding: 14px 80px 9px 0px;
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: top;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+}
+.deliveryContainerDiv2Label2Input1 {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+}
+.deliveryContainerDiv2Label2Img1 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.agreeContainer {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 24px;
+}
+.agreeContainerP1 {
+    margin-left: 36px;
+    padding-left: 16px;
+    background: url(https://res.kurly.com/pc/service/common/2006/ico_sub_dot.svg) 0px 0px / 16px
+        20px no-repeat;
+    font-size: 12px;
+    color: rgb(95, 0, 128);
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+.checkMeContainer {
+    display: flex;
+    padding: 8px 0px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.checkMeContainerDiv1 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.checkMeContainerDiv1Label1 {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    vertical-align: top;
+    line-height: normal;
+    color: rgb(51, 51, 51);
+    padding: 0px;
+    font-size: 14px;
+}
+.checkMeContainerDiv1Input1 {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0px, 0px, 0px, 0px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+}
+.checkMeContainerDiv1Label1Img1 {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.checkMeContainerDiv1Label1Span2 {
+    padding-left: 5px;
+    color: rgb(153, 153, 153);
+}
+.JoinButtonContainer {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-top: 1px solid rgb(247, 247, 247);
+    padding: 40px 0px;
+}
+.JoinButtonContainerButton1 {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 240px;
+    height: 56px;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(95, 0, 128);
+    border: 0px none;
+}
+.JoinButtonContainerButton1Span1 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Noto Sans-M';
+}

@@ -9,11 +9,12 @@ const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 const arrows = document.querySelectorAll('.container button');
 const buttons = document.querySelectorAll('.buttons button');
+const pages = document.getElementById('callpage');
 let checkArrow = false;
 let count = 1;
 let auto = setInterval(autoSlide, 2000);
 let temp = buttons[0];
-let size = 24480;
+let size = 25823;
 
 HTMLCollection.prototype.forEach = Array.prototype.forEach;
 buttons.forEach((button) => {
@@ -26,7 +27,7 @@ buttons.forEach((button) => {
         auto = setInterval(autoSlide, 2000);
     });
 });
-
+pages.innerHTML = `1 / 15`;
 imageDiv.forEach((div, i) => (div.style.backgroundImage = `url(image/00${i + 1}.jpg)`));
 
 banner.appendChild(lastImageDiv);
@@ -35,15 +36,13 @@ lastImageDiv.style.backgroundImage = `url(image/001.jpg)`;
 banner.insertBefore(firstImageDiv, document.querySelector('div.banner div'));
 firstImageDiv.style.backgroundImage = `url(image/00${imageDiv.length}.jpg)`;
 
-banner.style.transform = `translate(-1440px)`;
+banner.style.transform = `translate(-1519px)`;
 /* 마우스 오버 */
 container.addEventListener('mouseover', function () {
     arrows.forEach((e) => (e.style.opacity = 1));
-
-    console.log(next);
 });
 container.addEventListener('mouseout', function () {
-    console.log('이거');
+    // console.log('이거');
     arrows.forEach((v) => (v.style.opacity = 0));
 });
 
@@ -65,14 +64,15 @@ function changeButtonStyle() {
 function autoSlide() {
     banner.style.transition = 'transform 0.3s';
     banner.style.transform = `translate(${-(size / 17) * ++count}px)`;
-    console.log(count);
+    // console.log(count);
     if (count == 16) {
         count = 1;
         setTimeout(function () {
             banner.style.transition = 'transform 0s';
-            banner.style.transform = 'translate(-1440px)';
+            banner.style.transform = 'translate(-1519px)';
         }, 300);
     }
+    pages.innerHTML = `${count} / ${imageDiv.length}`;
     changeButtonStyle();
 }
 
@@ -96,6 +96,7 @@ prev.addEventListener('click', function () {
     setTimeout(() => {
         checkArrow = false;
     }, 300);
+    pages.innerHTML = `${count} / ${imageDiv.length}`;
 });
 
 next.addEventListener('click', function () {
@@ -110,7 +111,7 @@ next.addEventListener('click', function () {
         count = 1;
         setTimeout(function () {
             banner.style.transition = 'transform 0s';
-            banner.style.transform = 'translate(-1440px)';
+            banner.style.transform = 'translate(-1519px)';
         }, 300);
     }
     changeButtonStyle();
@@ -118,4 +119,6 @@ next.addEventListener('click', function () {
     setTimeout(() => {
         checkArrow = false;
     }, 300);
+    pages.innerHTML = `${count} / ${imageDiv.length}`;
 });
+
