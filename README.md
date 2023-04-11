@@ -17,7 +17,7 @@
 * 2023년 02월 07일
     * js object, json, callback, typescript, Array
 * 2023년 02월 08일
-   * 종합실습, json-array, file-input-output study
+    * 종합실습, json-array, file-input-output study
 * 2023년 02월 09일
     * banner study, event, DOM study
 * 2023년 02월 10일
